@@ -9,7 +9,7 @@ function LikeButton() {
 }
 function Container() {
   const [count, setCount] = React.useState(0);
-  return React.createElement(
+  return (
     <div>
       <LikeButton />
       <div style={{ marginTop: 20 }}> 
@@ -24,3 +24,6 @@ function Container() {
 
 const domContainer = document.querySelector('#react-root');
 ReactDOM.render(React.createElement(Container), domContainer);
+
+// npm i @babel/core @babel/cli @babel/preset-react
+// npx babel --watch src --out-dir . --presets @babel/preset-react -> js 파일 내의 jsx 문법을 변환시키는 명령어

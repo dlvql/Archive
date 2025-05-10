@@ -7,7 +7,7 @@ function LikeButton() {
 }
 function Container() {
   const [count, setCount] = React.useState(0);
-  return React.createElement(/*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(LikeButton, null), /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(LikeButton, null), /*#__PURE__*/React.createElement("div", {
     style: {
       marginTop: 20
     }
@@ -15,7 +15,10 @@ function Container() {
     onClick: () => setCount(count + 1)
   }, "\uC99D\uAC00"), /*#__PURE__*/React.createElement("button", {
     onClick: () => setCount(count - 1)
-  }, "\uAC10\uC18C"))));
+  }, "\uAC10\uC18C")));
 }
 const domContainer = document.querySelector('#react-root');
 ReactDOM.render(React.createElement(Container), domContainer);
+
+// npm i @babel/core @babel/cli @babel/preset-react
+// npx babel --watch src --out-dir . --presets @babel/preset-react -> js 파일 내의 jsx 문법을 변환시키는 명령어
