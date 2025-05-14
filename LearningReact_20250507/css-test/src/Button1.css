@@ -1,0 +1,14 @@
+// Button1.css 파일
+
+.big {
+  width: 100px;
+}
+
+.small {
+  width: 50px;
+}
+
+.button {
+  height: 30px;
+  background-color: #aaaaaa;
+}
